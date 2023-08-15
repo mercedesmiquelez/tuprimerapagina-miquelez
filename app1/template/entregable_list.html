@@ -1,0 +1,9 @@
+{% extends 'app1/index.html' %}
+
+{% block content %}
+    {% for entregable in  entregables %}
+        {{entregable.nombre}}
+        {{entregable.fecha_entrega}}
+        {{entregable.entregado}}
+    {% endfor %}
+{% endblock %}

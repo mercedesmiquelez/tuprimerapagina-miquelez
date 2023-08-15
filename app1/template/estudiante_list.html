@@ -1,0 +1,10 @@
+{% extends 'app1/index.html' %}
+
+{% block content %}
+    <h1>Lista de Estudiantes</h1>
+    <ul>
+        {% for e in estudiantes %}
+            <li>{{ e.nombre }} {{ e.apellido }} {{ e.email }} {{ e.profesion }}</li>
+        {% endfor %}
+    </ul>
+{% endblock %}
