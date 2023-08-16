@@ -20,7 +20,7 @@ from app1.urls import urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('app1/', include(('app1.urls', 'app1'), namespace='app1')),
-    path('/', include('app1.urls')),
+    path('app1/', include(('app1.urls', 'app1'), namespace='app1')),
+    # path('/', include('app1.urls')),
     
 ]
