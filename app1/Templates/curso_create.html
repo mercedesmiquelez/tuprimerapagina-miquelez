@@ -1,6 +1,6 @@
-{% extends 'app1/index.html' %}
-
-{% block content %}
+{% extends 'index.html' %}
+{% load static %}
+{% block contenidoquecambia %}
     <form method="post">
         {% csrf_token %}
         <label for="nombre">Nombre del Curso:</label>
@@ -9,4 +9,4 @@
         <input type="text" name="numero_comision" required><br>
         <button type="submit">Guardar</button>
     </form>
-{% endblock %}
+{% endblock contenidoquecambia %}

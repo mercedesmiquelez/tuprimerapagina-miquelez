@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Buscar Cursos por Nombre</title>
-</head>
-<body>
+{% extends 'index.html' %}
+{% load static %}
+{% block contenidoquecambia %}
     <h1>Buscar Cursos por Nombre</h1>
     <form method="get" action="">
         {{ form.as_p }}
@@ -18,5 +15,4 @@
         {% endfor %}
     </ul>
     {% endif %}
-</body>
-</html>
+{% endblock contenidoquecambia %}

@@ -38,6 +38,9 @@ def curso_create(request):
 def index(request):
     return render(request, 'index.html')
 
+def inicio(request):
+    return render(request, 'inicio.html')
+
 def lista_entregables(request):
     entregables = Entregable.objects.all()
     return render(request, 'entregable_list.html', {'entregables': entregables})
