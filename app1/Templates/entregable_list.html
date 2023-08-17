@@ -1,9 +1,0 @@
-{% extends 'index.html' %}
-{% load static %}
-{% block contenidoquecambia %}
-    {% for entregable in  entregables %}
-        {{entregable.nombre}}
-        {{entregable.fecha_entrega}}
-        {{entregable.entregado}}
-    {% endfor %}
-{% endblock contenidoquecambia %}

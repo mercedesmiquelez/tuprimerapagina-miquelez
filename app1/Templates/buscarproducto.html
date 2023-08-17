@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buscar Productos por Nombre</title>
+</head>
+<body>
+    <h1>Buscar Productos por Nombre</h1>
+    <form method="get" action="">
+        {{ form.as_p }}
+        <button type="submit">Buscar</button>
+        <button onclick="goBack()">Volver</button>
+    </form>
+    
+    {% if productos %}
+    <h2>Resultados de la búsqueda:</h2>
+    <ul>
+        {% for producto in productos %}
+        <li>{{ producto.nombre }} - Tipo de producto {{ producto.tipo_producto }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+</body>
+</html>
